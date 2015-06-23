@@ -32,15 +32,41 @@ namespace ProblemSolutions {
 
 	/*
 	***** Solution ******
+		4.  Write an algorithm to calculate the square root of a number.
+	*/
+
+	void FindSquareRootSolution();
+
+	/*
+	***** Solution ******
 		5. Give an array of random integers.  Write an algorithm to find the
 			the closest 2 integers (closest by position) in the array that add up to 100.
 	*/
 	void FindTwoClosestRandomIntsInArray();
 
-	void ReverseLastNodesOfSinglyLinkedList(Blmbrg_Common::CommonNode ** pHead,
-			                                unsigned int uiNumberOnEndToReverse);
 
-	void ReverseSinglyLinkedList(Blmbrg_Common::CommonNode ** pHead);
+	/*
+	***** Solution ******
+		6. Given an array of integers, write a method that returns an array of the same size where each
+			index is the product of all integers except itself, ie given array {1,2,3,4} return {24,12,8,6}
+			explicitly {2*3*4,1*3*4,1*2*4,1*2*3}.
+	*/
+	void ProduceArrayOfProductsOfElementsSolution();
+
+
+
+	bool CalculateProductArray( int * pVals, unsigned int uiArySize );
+
+	void DisplayProductArray( int * pAry, unsigned int uiArySize );
+
+	void DisplaySquareRootResult( bool         bExactSqrRtFound,
+			                      unsigned int uiSquareRootTgt,
+			                      unsigned int uiLowerBound,
+			                      unsigned int uiUpperBound );
+
+	bool bDoesLinkListLoopOnItself( Blmbrg_Common::CommonNode *  pHead,
+		                            Blmbrg_Common::CommonNode ** pLinkBackFromNode,
+			                        Blmbrg_Common::CommonNode ** pLinkBackToNode );
 
 	bool FindClosestInArrayThatSum( int *        RandomNumAry,
 			                        int          iSummationVal,
@@ -49,9 +75,15 @@ namespace ProblemSolutions {
 			                        int &        iFirstValueIdx,
 			                        int &        iSecondValue,
 			                        int &        iSecondValueIdx );
-	bool bDoesLinkListLoopOnItself( Blmbrg_Common::CommonNode *  pHead,
-			                        Blmbrg_Common::CommonNode ** pLinkBackFromNode,
-			                        Blmbrg_Common::CommonNode ** pLinkBackToNode );
+	bool FindSquareRoot( unsigned int uiSquareRootTgt,
+			             unsigned int & uiSquareRootRangeBottom,
+			             unsigned int & uiSquareRootRangeTop );
+
+	void ReverseLastNodesOfSinglyLinkedList(Blmbrg_Common::CommonNode ** pHead,
+			                                unsigned int uiNumberOnEndToReverse);
+
+	void ReverseSinglyLinkedList(Blmbrg_Common::CommonNode ** pHead);
+
 };
 
 

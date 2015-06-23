@@ -26,10 +26,25 @@ int main() {
 
 	/*
 	***** Solution ******
+		4.  Write an algorithm to calculate the square root of a number.
+	*/
+
+    ProblemSolutions::FindSquareRootSolution();
+
+	/*
+	***** Solution ******
 	5. Give an array of random integers.  Write an algorithm to find the
 	the closest 2 integers (closest by position) in the array that add up to 100.
 	*/
 	ProblemSolutions::FindTwoClosestRandomIntsInArray();
+
+	/*
+	***** Solution ******
+		6. Given an array of integers, write a method that returns an array of the same size where each
+			index is the product of all integers except itself, ie given array {1,2,3,4} return {24,12,8,6}
+			explicitly {2*3*4,1*3*4,1*2*4,1*2*3}.
+	*/
+	ProblemSolutions::ProduceArrayOfProductsOfElementsSolution();
 
 	return 0;
 }
